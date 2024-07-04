@@ -16,6 +16,7 @@
 		048668B22C369D9E00A521BC /* MagnifyingGlassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048668B12C369D9E00A521BC /* MagnifyingGlassTests.swift */; };
 		048668BC2C369D9E00A521BC /* MagnifyingGlassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048668BB2C369D9E00A521BC /* MagnifyingGlassUITests.swift */; };
 		048668BE2C369D9E00A521BC /* MagnifyingGlassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048668BD2C369D9E00A521BC /* MagnifyingGlassUITestsLaunchTests.swift */; };
+		048668CC2C369EDA00A521BC /* MagnifyingGlass in Frameworks */ = {isa = PBXBuildFile; productRef = 048668CB2C369EDA00A521BC /* MagnifyingGlass */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048668CC2C369EDA00A521BC /* MagnifyingGlass in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = MagnifyingGlass;
+			packageProductDependencies = (
+				048668CB2C369EDA00A521BC /* MagnifyingGlass */,
+			);
 			productName = MagnifyingGlass;
 			productReference = 048668972C369D9A00A521BC /* MagnifyingGlass.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 0486688E2C369D9A00A521BC;
+			packageReferences = (
+				048668CA2C369EDA00A521BC /* XCRemoteSwiftPackageReference "MagnifyingGlass-Swift" */,
+			);
 			productRefGroup = 048668982C369D9A00A521BC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		048668CA2C369EDA00A521BC /* XCRemoteSwiftPackageReference "MagnifyingGlass-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/niczyja/MagnifyingGlass-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		048668CB2C369EDA00A521BC /* MagnifyingGlass */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 048668CA2C369EDA00A521BC /* XCRemoteSwiftPackageReference "MagnifyingGlass-Swift" */;
+			productName = MagnifyingGlass;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0486688F2C369D9A00A521BC /* Project object */;
 }
